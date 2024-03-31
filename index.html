@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roulette</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header>
+        <h1>La roulette de puant</h1>
+    </header>
+  <div class="container">
+    <h2>Contenu :</h2>
+    <div class="text-list" id="textList">
+      <!-- La liste des textes sera générée ici -->
+    </div>
+    <div class="roulette-container">
+      <div class="roulette" id="roulette" onclick="rotateRoulette()">
+        <div class="arrow"></div>
+        <!-- Pas de texte ici -->
+      </div>
+    </div>
+  </div>
+  <div id="result"></div>
+
+  <div class="input-container">
+    <input type="text" id="newText" placeholder="Entrez un nouveau texte">
+    <button onclick="addText()">Ajouter</button>
+    <button onclick="removeText()">Supprimer</button>
+    <button onclick="importDefaultList()">Armes Valorant</button>
+  </div>
+
+  <script src="script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+header{
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.text-list {
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Colonnes dynamiques */
+    grid-gap: 10px; /* Espacement entre les éléments */
+  }
+  
+  .text-list h2 {
+    margin-top: 0;
+  }
+  
+  .text-list li {
+    list-style: none; /* Supprimer les puces */
+    padding: 10px;
+    background-color: #f0f0f0; /* Fond des éléments */
+    border-radius: 5px;
+  }
+
+.roulette-container {
+    display: flex;
+    align-items: center;
+}
+
+.roulette {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border: 10px solid #333;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #333 transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.input-container {
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.input-container input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-container button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+    background-color: #0056b3;
+}
+
+
+#result {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
